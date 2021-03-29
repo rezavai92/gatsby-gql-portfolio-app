@@ -1,0 +1,15 @@
+.navGrid{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-gap: 1%;
+}
+
+.navGrid a{
+    color: white;
+}
+
+.navGrid a:hover{
+    text-decoration: unset;
+    color: orangered;
+}
