@@ -22,15 +22,15 @@ export default function Blog({data}) {
     return (
          <Layout>
 
-           <h1 style={{textAlign:"center"}}>Welcome to the blog section</h1>
+           <h1 style={{textAlign:"center",marginTop:"5%"}}>Welcome to the blog section</h1>
            <div className="blogs container" >
            
            {
              edges.map((e)=>{
                if(e.node.fileAbsolutePath.includes("blogs"))
                return(
-                <Card style={{ width: '100%' , maxHeight:"100%"  }}>
-                <Card.Img variant="top" src={`${e.node.id}.png`} />
+                <Card style={{width:"100%"}}>
+                <Card.Img variant="top" src={`${e.node.id}.png`} style={{height:"250px"}}  />
                 <Card.Body>
                   <Card.Title style={{color:"black"}} >{e.node.frontmatter.title}</Card.Title>
                   <Card.Text style={{color:"black"}} >

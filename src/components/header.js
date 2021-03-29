@@ -24,7 +24,7 @@ export default function Header() {
            </h5>
           <h5>
           <Link to="/projects" >
-                Portfolio
+                Projects
             </Link>
           </h5>
         </nav>

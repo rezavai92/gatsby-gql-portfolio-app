@@ -20,8 +20,8 @@ export default function Project({data}) {
           filteredEdges.map((e)=>{
            
             return(
-             <Card style={{ width: '100%' , maxHeight:"100%"  }}>
-             <Card.Img variant="top" src={`${e.node.id}.png`} />
+             <Card >
+          
              <Card.Body>
                <Card.Title style={{color:"black"}} >{e.node.frontmatter.title}</Card.Title>
                <Card.Text style={{color:"black"}} >
